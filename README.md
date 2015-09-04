@@ -39,18 +39,16 @@ Style your canvas by adding a height and width in the css.
 Then add a javascript like this one :
 ```
 var params = {
-  canvasId : 'myCanvas',
-  triangleWidth : 16,
-  triangleHeight : 18,
-  trailMaxLength : 12,
-  trailIntervalCreation : 200,
-  delayBeforeDisappear : 2,
-  colors : ['#eb9000', '#f6b400','#440510', '#8a0a08','#91dffa'] 
+  canvasId : 'myCanvas',        // id of your canvas
+  triangleWidth : 16,           // width of each triangle
+  triangleHeight : 18,          // height of each triangle
+  trailMaxLength : 12,          // Maximum of connected triangles to form a trail
+  trailIntervalCreation : 200,  // Delay before the creation of a new trail (in milliseconds)
+  delayBeforeDisappear : 2,     // Delay before a trail starts to disappear (in seconds)
+  colors : ['#eb9000', '#f6b400','#440510', '#8a0a08','#91dffa'] // Colors you want to use for the triangles
 };
 
 var tl = new TrianglesLife(params);
-
-
 ```
 ## trianglesLife.start()
 Start the generation :

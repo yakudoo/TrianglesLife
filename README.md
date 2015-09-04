@@ -49,22 +49,31 @@ var params = {
 };
 
 var tl = new TrianglesLife(params);
-tl.start();
+
 
 ```
+## trianglesLife.start()
+Start the generation :
+```
+tl.start();
+```
 
+## trianglesLife.kill()
 You can kill the process of the generator by doing :
 ```
 tl.kill();
 ```
+## trianglesLife.pause()
 Pause it :
 ```
 tl.pause();
 ```
+## trianglesLife.resume()
 Resume it :
 ```
 tl.resume();
 ```
+## trianglesLife.closeAll()
 Close all the triangles :
 ```
 tl.closeAll();
